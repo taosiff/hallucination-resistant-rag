@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: evidenceguard-deployment
+  labels:
+    app: evidenceguard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: evidenceguard
+  template:
+    metadata:
+      labels:
+        app: evidenceguard
+    spec:
+      containers:
+      - name: evidenceguard-api
+        image: evidenceguard-rag:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: DEFAULT_LLM_PROVIDER
+          value: "mock"
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "4Gi"
+            cpu: "2000m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 15
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: evidenceguard-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: evidenceguard
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000

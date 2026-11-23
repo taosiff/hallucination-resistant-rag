@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: evidenceguard-rag
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m uvicorn backend.api.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: ENVIRONMENT
+        value: production
+      - key: DEFAULT_LLM_PROVIDER
+        value: mock
+      - key: ENABLE_MLFLOW
+        value: false
+    disk:
+      name: evidenceguard-data
+      mountPath: /app/data
+      sizeGB: 10
