@@ -1,0 +1,45 @@
+# EvidenceGuard RAG: Production & Research Dependencies
+
+# Core Web & API
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+python-multipart>=0.0.9
+
+# LangChain & LangGraph Orchestration
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langgraph>=0.2.20
+
+# Retrieval & Vector Database
+chromadb>=0.5.0
+rank_bm25>=0.2.2
+sentence-transformers>=3.0.0
+
+# Document Ingestion & Parsing
+pypdf>=4.3.0
+python-docx>=1.1.0
+
+# Machine Learning & Classifiers
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.5.0
+xgboost>=2.1.0
+lightgbm>=4.5.0
+
+# Deep Learning & Evaluation
+torch>=2.2.0
+transformers>=4.44.0
+accelerate>=0.33.0
+peft>=0.12.0
+datasets>=2.20.0
+nltk>=3.8.1
+
+# Experiment Tracking & Utilities
+mlflow>=2.15.0
+rich>=13.7.0
+pytest>=8.2.0
+httpx>=0.27.0
+python-dotenv>=1.0.0

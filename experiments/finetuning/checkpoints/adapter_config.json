@@ -1,0 +1,17 @@
+{
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "peft_type": "LORA",
+  "r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+    "q_proj",
+    "v_proj",
+    "k_proj",
+    "o_proj"
+  ],
+  "training_epochs": 3,
+  "final_train_loss": 0.4223286172070847,
+  "final_val_loss": 0.5539117612618657,
+  "hardware": "NVIDIA GeForce RTX 4080 SUPER (16 GB VRAM)"
+}

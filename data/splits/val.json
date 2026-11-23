@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "EG-CAT-A-016",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What is the function of the transformer architecture's multi-head attention mechanism?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-016-1",
+        "doc_id": "doc-A-4",
+        "title": "Attention Is All You Need (Vaswani et al.)",
+        "text": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function, queries, keys, and values are linearly projected h times with distinct learned linear projections.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-016-2",
+        "doc_id": "doc-distractor-4",
+        "title": "Related Context on Attention Is All You Need (Vaswani et al.)",
+        "text": "Positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks to inject sequence order information.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-016-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-016-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-017",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What is the function of the transformer architecture's multi-head attention mechanism? (Variant 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-017-1",
+        "doc_id": "doc-A-4",
+        "title": "Attention Is All You Need (Vaswani et al.)",
+        "text": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function, queries, keys, and values are linearly projected h times with distinct learned linear projections.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-017-2",
+        "doc_id": "doc-distractor-4",
+        "title": "Related Context on Attention Is All You Need (Vaswani et al.)",
+        "text": "Positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks to inject sequence order information.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-017-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-017-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-018",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What is the function of the transformer architecture's multi-head attention mechanism? (Variant 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-018-1",
+        "doc_id": "doc-A-4",
+        "title": "Attention Is All You Need (Vaswani et al.)",
+        "text": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function, queries, keys, and values are linearly projected h times with distinct learned linear projections.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-018-2",
+        "doc_id": "doc-distractor-4",
+        "title": "Related Context on Attention Is All You Need (Vaswani et al.)",
+        "text": "Positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks to inject sequence order information.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-018-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-018-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-019",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What is the function of the transformer architecture's multi-head attention mechanism? (Variant 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-019-1",
+        "doc_id": "doc-A-4",
+        "title": "Attention Is All You Need (Vaswani et al.)",
+        "text": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function, queries, keys, and values are linearly projected h times with distinct learned linear projections.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-019-2",
+        "doc_id": "doc-distractor-4",
+        "title": "Related Context on Attention Is All You Need (Vaswani et al.)",
+        "text": "Positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks to inject sequence order information.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-019-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-019-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-020",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What is the function of the transformer architecture's multi-head attention mechanism? (Variant 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-020-1",
+        "doc_id": "doc-A-4",
+        "title": "Attention Is All You Need (Vaswani et al.)",
+        "text": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. Instead of performing a single attention function, queries, keys, and values are linearly projected h times with distinct learned linear projections.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-020-2",
+        "doc_id": "doc-distractor-4",
+        "title": "Related Context on Attention Is All You Need (Vaswani et al.)",
+        "text": "Positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks to inject sequence order information.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-020-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-020-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-016",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What was the official stock ticker symbol of Amazon when it operated as Cadabra between 1994 and 1995?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-016-1",
+        "doc_id": "doc-B-4",
+        "title": "The Everything Store: Early History",
+        "text": "Jeff Bezos initially incorporated Amazon under the legal name Cadabra Inc. on July 5, 1994. Several months later, after an attorney misheard the name as 'cadaver', Bezos changed the company name to Amazon.com. The company was private during this initial period.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-017",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What was the official stock ticker symbol of Amazon when it operated as Cadabra between 1994 and 1995? (Scenario 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-017-1",
+        "doc_id": "doc-B-4",
+        "title": "The Everything Store: Early History",
+        "text": "Jeff Bezos initially incorporated Amazon under the legal name Cadabra Inc. on July 5, 1994. Several months later, after an attorney misheard the name as 'cadaver', Bezos changed the company name to Amazon.com. The company was private during this initial period.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-018",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What was the official stock ticker symbol of Amazon when it operated as Cadabra between 1994 and 1995? (Scenario 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-018-1",
+        "doc_id": "doc-B-4",
+        "title": "The Everything Store: Early History",
+        "text": "Jeff Bezos initially incorporated Amazon under the legal name Cadabra Inc. on July 5, 1994. Several months later, after an attorney misheard the name as 'cadaver', Bezos changed the company name to Amazon.com. The company was private during this initial period.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-019",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What was the official stock ticker symbol of Amazon when it operated as Cadabra between 1994 and 1995? (Scenario 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-019-1",
+        "doc_id": "doc-B-4",
+        "title": "The Everything Store: Early History",
+        "text": "Jeff Bezos initially incorporated Amazon under the legal name Cadabra Inc. on July 5, 1994. Several months later, after an attorney misheard the name as 'cadaver', Bezos changed the company name to Amazon.com. The company was private during this initial period.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-020",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What was the official stock ticker symbol of Amazon when it operated as Cadabra between 1994 and 1995? (Scenario 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-020-1",
+        "doc_id": "doc-B-4",
+        "title": "The Everything Store: Early History",
+        "text": "Jeff Bezos initially incorporated Amazon under the legal name Cadabra Inc. on July 5, 1994. Several months later, after an attorney misheard the name as 'cadaver', Bezos changed the company name to Amazon.com. The company was private during this initial period.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-016",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What is the mathematical definition of Shannon entropy in information theory?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-016-1",
+        "doc_id": "doc-C1-4",
+        "title": "History of Mathematics & Thermodynamics",
+        "text": "Claude Shannon was an American mathematician and electrical engineer who worked at Bell Labs during World War II on cryptography and fire-control systems.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-016-2",
+        "doc_id": "doc-C2-4",
+        "title": "Supplemental History of Mathematics & Thermodynamics",
+        "text": "Thermodynamic entropy, formulated by Rudolf Clausius, measures the amount of thermal energy unavailable for doing mechanical work in a closed system.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-017",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What is the mathematical definition of Shannon entropy in information theory? (Query 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-017-1",
+        "doc_id": "doc-C1-4",
+        "title": "History of Mathematics & Thermodynamics",
+        "text": "Claude Shannon was an American mathematician and electrical engineer who worked at Bell Labs during World War II on cryptography and fire-control systems.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-017-2",
+        "doc_id": "doc-C2-4",
+        "title": "Supplemental History of Mathematics & Thermodynamics",
+        "text": "Thermodynamic entropy, formulated by Rudolf Clausius, measures the amount of thermal energy unavailable for doing mechanical work in a closed system.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-018",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What is the mathematical definition of Shannon entropy in information theory? (Query 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-018-1",
+        "doc_id": "doc-C1-4",
+        "title": "History of Mathematics & Thermodynamics",
+        "text": "Claude Shannon was an American mathematician and electrical engineer who worked at Bell Labs during World War II on cryptography and fire-control systems.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-018-2",
+        "doc_id": "doc-C2-4",
+        "title": "Supplemental History of Mathematics & Thermodynamics",
+        "text": "Thermodynamic entropy, formulated by Rudolf Clausius, measures the amount of thermal energy unavailable for doing mechanical work in a closed system.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-019",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What is the mathematical definition of Shannon entropy in information theory? (Query 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-019-1",
+        "doc_id": "doc-C1-4",
+        "title": "History of Mathematics & Thermodynamics",
+        "text": "Claude Shannon was an American mathematician and electrical engineer who worked at Bell Labs during World War II on cryptography and fire-control systems.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-019-2",
+        "doc_id": "doc-C2-4",
+        "title": "Supplemental History of Mathematics & Thermodynamics",
+        "text": "Thermodynamic entropy, formulated by Rudolf Clausius, measures the amount of thermal energy unavailable for doing mechanical work in a closed system.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-020",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What is the mathematical definition of Shannon entropy in information theory? (Query 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-020-1",
+        "doc_id": "doc-C1-4",
+        "title": "History of Mathematics & Thermodynamics",
+        "text": "Claude Shannon was an American mathematician and electrical engineer who worked at Bell Labs during World War II on cryptography and fire-control systems.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-020-2",
+        "doc_id": "doc-C2-4",
+        "title": "Supplemental History of Mathematics & Thermodynamics",
+        "text": "Thermodynamic entropy, formulated by Rudolf Clausius, measures the amount of thermal energy unavailable for doing mechanical work in a closed system.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-016",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "What are the two active ingredients in Paxlovid, and what is its standard clinical course duration?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-016-1",
+        "doc_id": "doc-D-4",
+        "title": "Paxlovid Pharmacology Monograph",
+        "text": "Paxlovid is an oral antiviral therapy composed of nirmatrelvir (a SARS-CoV-2 main protease inhibitor) co-administered with ritonavir (a pharmacokinetic booster that inhibits CYP3A metabolism).",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: Paxlovid consists of nirmatrelvir co-packaged with ritonavir. However: The standard duration of the clinical treatment course (5 days) is not stated.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-016-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Paxlovid consists of nirmatrelvir co-packaged with ritonavir.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-016-1"
+      },
+      {
+        "claim": "The standard duration of the clinical treatment course (5 days) is not stated.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-017",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "What are the two active ingredients in Paxlovid, and what is its standard clinical course duration? (Part 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-017-1",
+        "doc_id": "doc-D-4",
+        "title": "Paxlovid Pharmacology Monograph",
+        "text": "Paxlovid is an oral antiviral therapy composed of nirmatrelvir (a SARS-CoV-2 main protease inhibitor) co-administered with ritonavir (a pharmacokinetic booster that inhibits CYP3A metabolism).",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: Paxlovid consists of nirmatrelvir co-packaged with ritonavir. However: The standard duration of the clinical treatment course (5 days) is not stated.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-017-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Paxlovid consists of nirmatrelvir co-packaged with ritonavir.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-017-1"
+      },
+      {
+        "claim": "The standard duration of the clinical treatment course (5 days) is not stated.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-018",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "What are the two active ingredients in Paxlovid, and what is its standard clinical course duration? (Part 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-018-1",
+        "doc_id": "doc-D-4",
+        "title": "Paxlovid Pharmacology Monograph",
+        "text": "Paxlovid is an oral antiviral therapy composed of nirmatrelvir (a SARS-CoV-2 main protease inhibitor) co-administered with ritonavir (a pharmacokinetic booster that inhibits CYP3A metabolism).",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: Paxlovid consists of nirmatrelvir co-packaged with ritonavir. However: The standard duration of the clinical treatment course (5 days) is not stated.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-018-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Paxlovid consists of nirmatrelvir co-packaged with ritonavir.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-018-1"
+      },
+      {
+        "claim": "The standard duration of the clinical treatment course (5 days) is not stated.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-019",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "What are the two active ingredients in Paxlovid, and what is its standard clinical course duration? (Part 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-019-1",
+        "doc_id": "doc-D-4",
+        "title": "Paxlovid Pharmacology Monograph",
+        "text": "Paxlovid is an oral antiviral therapy composed of nirmatrelvir (a SARS-CoV-2 main protease inhibitor) co-administered with ritonavir (a pharmacokinetic booster that inhibits CYP3A metabolism).",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: Paxlovid consists of nirmatrelvir co-packaged with ritonavir. However: The standard duration of the clinical treatment course (5 days) is not stated.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-019-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Paxlovid consists of nirmatrelvir co-packaged with ritonavir.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-019-1"
+      },
+      {
+        "claim": "The standard duration of the clinical treatment course (5 days) is not stated.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-020",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "What are the two active ingredients in Paxlovid, and what is its standard clinical course duration? (Part 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-020-1",
+        "doc_id": "doc-D-4",
+        "title": "Paxlovid Pharmacology Monograph",
+        "text": "Paxlovid is an oral antiviral therapy composed of nirmatrelvir (a SARS-CoV-2 main protease inhibitor) co-administered with ritonavir (a pharmacokinetic booster that inhibits CYP3A metabolism).",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: Paxlovid consists of nirmatrelvir co-packaged with ritonavir. However: The standard duration of the clinical treatment course (5 days) is not stated.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-020-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Paxlovid consists of nirmatrelvir co-packaged with ritonavir.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-020-1"
+      },
+      {
+        "claim": "The standard duration of the clinical treatment course (5 days) is not stated.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-016",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "What is the recommended adult dosage of Drug Zelta for acute hypertension?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-016-1",
+        "doc_id": "doc-E1-4",
+        "title": "ESC Clinical Practice Guidelines",
+        "text": "European Cardiology Guidelines recommend Drug Zelta at an initial dose of 10 mg administered twice daily for stage-2 acute hypertension.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "ESC Clinical Practice Guidelines"
+      },
+      {
+        "id": "p-EG-CAT-E-016-2",
+        "doc_id": "doc-E2-4",
+        "title": "ACC/AHA Dosing Standards",
+        "text": "North American Cardiovascular Standards explicitly recommend Drug Zelta at 25 mg taken once daily with a high-protein meal.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "ACC/AHA Dosing Standards"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Conflicting dosing guidelines: 10 mg twice daily vs. 25 mg once daily. Clinical Guideline A specifies 10 mg twice daily. whereas Clinical Guideline B specifies 25 mg once daily with food.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-016-1",
+      "p-EG-CAT-E-016-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-016-1",
+      "p-EG-CAT-E-016-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Clinical Guideline A specifies 10 mg twice daily.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-016-1"
+      },
+      {
+        "claim": "Clinical Guideline B specifies 25 mg once daily with food.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-016-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-017",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "What is the recommended adult dosage of Drug Zelta for acute hypertension? (Perspective 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-017-1",
+        "doc_id": "doc-E1-4",
+        "title": "ESC Clinical Practice Guidelines",
+        "text": "European Cardiology Guidelines recommend Drug Zelta at an initial dose of 10 mg administered twice daily for stage-2 acute hypertension.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "ESC Clinical Practice Guidelines"
+      },
+      {
+        "id": "p-EG-CAT-E-017-2",
+        "doc_id": "doc-E2-4",
+        "title": "ACC/AHA Dosing Standards",
+        "text": "North American Cardiovascular Standards explicitly recommend Drug Zelta at 25 mg taken once daily with a high-protein meal.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "ACC/AHA Dosing Standards"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Conflicting dosing guidelines: 10 mg twice daily vs. 25 mg once daily. Clinical Guideline A specifies 10 mg twice daily. whereas Clinical Guideline B specifies 25 mg once daily with food.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-017-1",
+      "p-EG-CAT-E-017-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-017-1",
+      "p-EG-CAT-E-017-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Clinical Guideline A specifies 10 mg twice daily.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-017-1"
+      },
+      {
+        "claim": "Clinical Guideline B specifies 25 mg once daily with food.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-017-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-018",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "What is the recommended adult dosage of Drug Zelta for acute hypertension? (Perspective 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-018-1",
+        "doc_id": "doc-E1-4",
+        "title": "ESC Clinical Practice Guidelines",
+        "text": "European Cardiology Guidelines recommend Drug Zelta at an initial dose of 10 mg administered twice daily for stage-2 acute hypertension.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "ESC Clinical Practice Guidelines"
+      },
+      {
+        "id": "p-EG-CAT-E-018-2",
+        "doc_id": "doc-E2-4",
+        "title": "ACC/AHA Dosing Standards",
+        "text": "North American Cardiovascular Standards explicitly recommend Drug Zelta at 25 mg taken once daily with a high-protein meal.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "ACC/AHA Dosing Standards"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Conflicting dosing guidelines: 10 mg twice daily vs. 25 mg once daily. Clinical Guideline A specifies 10 mg twice daily. whereas Clinical Guideline B specifies 25 mg once daily with food.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-018-1",
+      "p-EG-CAT-E-018-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-018-1",
+      "p-EG-CAT-E-018-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Clinical Guideline A specifies 10 mg twice daily.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-018-1"
+      },
+      {
+        "claim": "Clinical Guideline B specifies 25 mg once daily with food.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-018-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-019",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "What is the recommended adult dosage of Drug Zelta for acute hypertension? (Perspective 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-019-1",
+        "doc_id": "doc-E1-4",
+        "title": "ESC Clinical Practice Guidelines",
+        "text": "European Cardiology Guidelines recommend Drug Zelta at an initial dose of 10 mg administered twice daily for stage-2 acute hypertension.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "ESC Clinical Practice Guidelines"
+      },
+      {
+        "id": "p-EG-CAT-E-019-2",
+        "doc_id": "doc-E2-4",
+        "title": "ACC/AHA Dosing Standards",
+        "text": "North American Cardiovascular Standards explicitly recommend Drug Zelta at 25 mg taken once daily with a high-protein meal.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "ACC/AHA Dosing Standards"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Conflicting dosing guidelines: 10 mg twice daily vs. 25 mg once daily. Clinical Guideline A specifies 10 mg twice daily. whereas Clinical Guideline B specifies 25 mg once daily with food.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-019-1",
+      "p-EG-CAT-E-019-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-019-1",
+      "p-EG-CAT-E-019-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Clinical Guideline A specifies 10 mg twice daily.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-019-1"
+      },
+      {
+        "claim": "Clinical Guideline B specifies 25 mg once daily with food.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-019-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-020",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "What is the recommended adult dosage of Drug Zelta for acute hypertension? (Perspective 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-020-1",
+        "doc_id": "doc-E1-4",
+        "title": "ESC Clinical Practice Guidelines",
+        "text": "European Cardiology Guidelines recommend Drug Zelta at an initial dose of 10 mg administered twice daily for stage-2 acute hypertension.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "ESC Clinical Practice Guidelines"
+      },
+      {
+        "id": "p-EG-CAT-E-020-2",
+        "doc_id": "doc-E2-4",
+        "title": "ACC/AHA Dosing Standards",
+        "text": "North American Cardiovascular Standards explicitly recommend Drug Zelta at 25 mg taken once daily with a high-protein meal.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "ACC/AHA Dosing Standards"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Conflicting dosing guidelines: 10 mg twice daily vs. 25 mg once daily. Clinical Guideline A specifies 10 mg twice daily. whereas Clinical Guideline B specifies 25 mg once daily with food.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-020-1",
+      "p-EG-CAT-E-020-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-020-1",
+      "p-EG-CAT-E-020-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Clinical Guideline A specifies 10 mg twice daily.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-020-1"
+      },
+      {
+        "claim": "Clinical Guideline B specifies 25 mg once daily with food.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-020-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-016",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What engine powers the aircraft that holds the absolute air speed record set by the Lockheed SR-71 Blackbird?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-016-1",
+        "doc_id": "doc-F1-4",
+        "title": "Aviation Speed Records",
+        "text": "On July 28, 1976, a Lockheed SR-71 Blackbird piloted by Eldon W. Joersz set the world absolute air speed record of 2,193 mph (3,529 km/h).",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "Aviation Speed Records"
+      },
+      {
+        "id": "p-EG-CAT-F-016-2",
+        "doc_id": "doc-F2-4",
+        "title": "Pratt & Whitney J58 Technical Specifications",
+        "text": "The Lockheed SR-71 is propelled by two Pratt & Whitney J58 (JT11D-20) turbojet engines, designed to operate continuously on afterburner at Mach 3.2.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Pratt & Whitney J58 Technical Specifications"
+      }
+    ],
+    "ground_truth_answer": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-016-1",
+      "p-EG-CAT-F-016-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-016-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-017",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What engine powers the aircraft that holds the absolute air speed record set by the Lockheed SR-71 Blackbird? (Hop 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-017-1",
+        "doc_id": "doc-F1-4",
+        "title": "Aviation Speed Records",
+        "text": "On July 28, 1976, a Lockheed SR-71 Blackbird piloted by Eldon W. Joersz set the world absolute air speed record of 2,193 mph (3,529 km/h).",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "Aviation Speed Records"
+      },
+      {
+        "id": "p-EG-CAT-F-017-2",
+        "doc_id": "doc-F2-4",
+        "title": "Pratt & Whitney J58 Technical Specifications",
+        "text": "The Lockheed SR-71 is propelled by two Pratt & Whitney J58 (JT11D-20) turbojet engines, designed to operate continuously on afterburner at Mach 3.2.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Pratt & Whitney J58 Technical Specifications"
+      }
+    ],
+    "ground_truth_answer": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-017-1",
+      "p-EG-CAT-F-017-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-017-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-018",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What engine powers the aircraft that holds the absolute air speed record set by the Lockheed SR-71 Blackbird? (Hop 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-018-1",
+        "doc_id": "doc-F1-4",
+        "title": "Aviation Speed Records",
+        "text": "On July 28, 1976, a Lockheed SR-71 Blackbird piloted by Eldon W. Joersz set the world absolute air speed record of 2,193 mph (3,529 km/h).",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "Aviation Speed Records"
+      },
+      {
+        "id": "p-EG-CAT-F-018-2",
+        "doc_id": "doc-F2-4",
+        "title": "Pratt & Whitney J58 Technical Specifications",
+        "text": "The Lockheed SR-71 is propelled by two Pratt & Whitney J58 (JT11D-20) turbojet engines, designed to operate continuously on afterburner at Mach 3.2.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Pratt & Whitney J58 Technical Specifications"
+      }
+    ],
+    "ground_truth_answer": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-018-1",
+      "p-EG-CAT-F-018-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-018-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-019",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What engine powers the aircraft that holds the absolute air speed record set by the Lockheed SR-71 Blackbird? (Hop 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-019-1",
+        "doc_id": "doc-F1-4",
+        "title": "Aviation Speed Records",
+        "text": "On July 28, 1976, a Lockheed SR-71 Blackbird piloted by Eldon W. Joersz set the world absolute air speed record of 2,193 mph (3,529 km/h).",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "Aviation Speed Records"
+      },
+      {
+        "id": "p-EG-CAT-F-019-2",
+        "doc_id": "doc-F2-4",
+        "title": "Pratt & Whitney J58 Technical Specifications",
+        "text": "The Lockheed SR-71 is propelled by two Pratt & Whitney J58 (JT11D-20) turbojet engines, designed to operate continuously on afterburner at Mach 3.2.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Pratt & Whitney J58 Technical Specifications"
+      }
+    ],
+    "ground_truth_answer": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-019-1",
+      "p-EG-CAT-F-019-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-019-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-020",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What engine powers the aircraft that holds the absolute air speed record set by the Lockheed SR-71 Blackbird? (Hop 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-020-1",
+        "doc_id": "doc-F1-4",
+        "title": "Aviation Speed Records",
+        "text": "On July 28, 1976, a Lockheed SR-71 Blackbird piloted by Eldon W. Joersz set the world absolute air speed record of 2,193 mph (3,529 km/h).",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "Aviation Speed Records"
+      },
+      {
+        "id": "p-EG-CAT-F-020-2",
+        "doc_id": "doc-F2-4",
+        "title": "Pratt & Whitney J58 Technical Specifications",
+        "text": "The Lockheed SR-71 is propelled by two Pratt & Whitney J58 (JT11D-20) turbojet engines, designed to operate continuously on afterburner at Mach 3.2.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Pratt & Whitney J58 Technical Specifications"
+      }
+    ],
+    "ground_truth_answer": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-020-1",
+      "p-EG-CAT-F-020-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The Lockheed SR-71 Blackbird is powered by two Pratt & Whitney J58 (JT11D-20) continuous-bleed afterburning turbojet engines.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-020-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-016",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the UK's status regarding membership in the European Union?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-016-1",
+        "doc_id": "doc-G-old-4",
+        "title": "European Union Handbook (2015)",
+        "text": "The United Kingdom is one of the 28 member states of the European Union, having joined the European Communities in 1973.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "European Union Handbook (2015)"
+      },
+      {
+        "id": "p-EG-CAT-G-016-2",
+        "doc_id": "doc-G-new-4",
+        "title": "Post-Brexit Constitutional Legal Review (2021)",
+        "text": "Following the 2016 referendum and formal Article 50 invocation, the United Kingdom officially withdrew from the European Union on January 31, 2020.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Post-Brexit Constitutional Legal Review (2021)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-016-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-016-1",
+      "p-EG-CAT-G-016-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-016-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-017",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the UK's status regarding membership in the European Union? (Temporal 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-017-1",
+        "doc_id": "doc-G-old-4",
+        "title": "European Union Handbook (2015)",
+        "text": "The United Kingdom is one of the 28 member states of the European Union, having joined the European Communities in 1973.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "European Union Handbook (2015)"
+      },
+      {
+        "id": "p-EG-CAT-G-017-2",
+        "doc_id": "doc-G-new-4",
+        "title": "Post-Brexit Constitutional Legal Review (2021)",
+        "text": "Following the 2016 referendum and formal Article 50 invocation, the United Kingdom officially withdrew from the European Union on January 31, 2020.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Post-Brexit Constitutional Legal Review (2021)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-017-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-017-1",
+      "p-EG-CAT-G-017-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-017-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-018",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the UK's status regarding membership in the European Union? (Temporal 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-018-1",
+        "doc_id": "doc-G-old-4",
+        "title": "European Union Handbook (2015)",
+        "text": "The United Kingdom is one of the 28 member states of the European Union, having joined the European Communities in 1973.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "European Union Handbook (2015)"
+      },
+      {
+        "id": "p-EG-CAT-G-018-2",
+        "doc_id": "doc-G-new-4",
+        "title": "Post-Brexit Constitutional Legal Review (2021)",
+        "text": "Following the 2016 referendum and formal Article 50 invocation, the United Kingdom officially withdrew from the European Union on January 31, 2020.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Post-Brexit Constitutional Legal Review (2021)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-018-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-018-1",
+      "p-EG-CAT-G-018-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-018-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-019",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the UK's status regarding membership in the European Union? (Temporal 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-019-1",
+        "doc_id": "doc-G-old-4",
+        "title": "European Union Handbook (2015)",
+        "text": "The United Kingdom is one of the 28 member states of the European Union, having joined the European Communities in 1973.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "European Union Handbook (2015)"
+      },
+      {
+        "id": "p-EG-CAT-G-019-2",
+        "doc_id": "doc-G-new-4",
+        "title": "Post-Brexit Constitutional Legal Review (2021)",
+        "text": "Following the 2016 referendum and formal Article 50 invocation, the United Kingdom officially withdrew from the European Union on January 31, 2020.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Post-Brexit Constitutional Legal Review (2021)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-019-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-019-1",
+      "p-EG-CAT-G-019-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-019-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-020",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the UK's status regarding membership in the European Union? (Temporal 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-020-1",
+        "doc_id": "doc-G-old-4",
+        "title": "European Union Handbook (2015)",
+        "text": "The United Kingdom is one of the 28 member states of the European Union, having joined the European Communities in 1973.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "European Union Handbook (2015)"
+      },
+      {
+        "id": "p-EG-CAT-G-020-2",
+        "doc_id": "doc-G-new-4",
+        "title": "Post-Brexit Constitutional Legal Review (2021)",
+        "text": "Following the 2016 referendum and formal Article 50 invocation, the United Kingdom officially withdrew from the European Union on January 31, 2020.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Post-Brexit Constitutional Legal Review (2021)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-020-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-020-1",
+      "p-EG-CAT-G-020-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The United Kingdom left the European Union on January 31, 2020 (Brexit), ending its member state status.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-020-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-016",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "How did Thomas Edison invent the transistor at Menlo Park in 1879?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-016-1",
+        "doc_id": "doc-H-fake-4",
+        "title": "Victorian Tech Myths",
+        "text": "In late 1879, Thomas Edison constructed the first solid-state silicon transistor in his Menlo Park laboratory alongside his incandescent bulb experiments.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Victorian Tech Myths"
+      },
+      {
+        "id": "p-EG-CAT-H-016-2",
+        "doc_id": "doc-H-fact-4",
+        "title": "IEEE History of Electronics",
+        "text": "The transistor was invented in December 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Telephone Laboratories, earning them the 1956 Nobel Prize.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "IEEE History of Electronics"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-016-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-016-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-016-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-017",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "How did Thomas Edison invent the transistor at Menlo Park in 1879? (Counterfactual 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-017-1",
+        "doc_id": "doc-H-fake-4",
+        "title": "Victorian Tech Myths",
+        "text": "In late 1879, Thomas Edison constructed the first solid-state silicon transistor in his Menlo Park laboratory alongside his incandescent bulb experiments.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Victorian Tech Myths"
+      },
+      {
+        "id": "p-EG-CAT-H-017-2",
+        "doc_id": "doc-H-fact-4",
+        "title": "IEEE History of Electronics",
+        "text": "The transistor was invented in December 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Telephone Laboratories, earning them the 1956 Nobel Prize.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "IEEE History of Electronics"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-017-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-017-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-017-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-018",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "How did Thomas Edison invent the transistor at Menlo Park in 1879? (Counterfactual 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-018-1",
+        "doc_id": "doc-H-fake-4",
+        "title": "Victorian Tech Myths",
+        "text": "In late 1879, Thomas Edison constructed the first solid-state silicon transistor in his Menlo Park laboratory alongside his incandescent bulb experiments.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Victorian Tech Myths"
+      },
+      {
+        "id": "p-EG-CAT-H-018-2",
+        "doc_id": "doc-H-fact-4",
+        "title": "IEEE History of Electronics",
+        "text": "The transistor was invented in December 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Telephone Laboratories, earning them the 1956 Nobel Prize.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "IEEE History of Electronics"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-018-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-018-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-018-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-019",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "How did Thomas Edison invent the transistor at Menlo Park in 1879? (Counterfactual 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-019-1",
+        "doc_id": "doc-H-fake-4",
+        "title": "Victorian Tech Myths",
+        "text": "In late 1879, Thomas Edison constructed the first solid-state silicon transistor in his Menlo Park laboratory alongside his incandescent bulb experiments.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Victorian Tech Myths"
+      },
+      {
+        "id": "p-EG-CAT-H-019-2",
+        "doc_id": "doc-H-fact-4",
+        "title": "IEEE History of Electronics",
+        "text": "The transistor was invented in December 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Telephone Laboratories, earning them the 1956 Nobel Prize.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "IEEE History of Electronics"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-019-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-019-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-019-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-020",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "How did Thomas Edison invent the transistor at Menlo Park in 1879? (Counterfactual 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-020-1",
+        "doc_id": "doc-H-fake-4",
+        "title": "Victorian Tech Myths",
+        "text": "In late 1879, Thomas Edison constructed the first solid-state silicon transistor in his Menlo Park laboratory alongside his incandescent bulb experiments.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Victorian Tech Myths"
+      },
+      {
+        "id": "p-EG-CAT-H-020-2",
+        "doc_id": "doc-H-fact-4",
+        "title": "IEEE History of Electronics",
+        "text": "The transistor was invented in December 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Telephone Laboratories, earning them the 1956 Nobel Prize.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "IEEE History of Electronics"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-020-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-020-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Thomas Edison did not invent the transistor; the point-contact transistor was invented in 1947 by Bardeen, Brattain, and Shockley at Bell Labs.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-020-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  }
+]

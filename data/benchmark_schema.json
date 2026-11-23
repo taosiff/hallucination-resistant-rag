@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvidenceGuardBenchmarkSample",
+  "description": "Schema for EvidenceGuard Hallucination-Resistance Benchmark Examples across Categories A through H",
+  "type": "object",
+  "required": [
+    "id",
+    "category",
+    "category_name",
+    "question",
+    "passages",
+    "ground_truth_answer",
+    "expected_decision",
+    "supporting_passage_ids",
+    "contradictory_passage_ids",
+    "is_answerable",
+    "claim_breakdown",
+    "source_metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier, e.g. 'EG-CAT-A-001'"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "description": "Benchmark category code"
+    },
+    "category_name": {
+      "type": "string",
+      "enum": [
+        "Answerable",
+        "Unanswerable",
+        "Irrelevant Retrieval",
+        "Partial Evidence",
+        "Conflicting Evidence",
+        "Multi-Hop Evidence",
+        "Outdated Evidence",
+        "Misleading Context"
+      ]
+    },
+    "question": {
+      "type": "string",
+      "description": "User question or inquiry"
+    },
+    "passages": {
+      "type": "array",
+      "description": "Retrieved context passages presented to the model",
+      "items": {
+        "type": "object",
+        "required": ["id", "doc_id", "title", "text", "is_gold", "date"],
+        "properties": {
+          "id": { "type": "string" },
+          "doc_id": { "type": "string" },
+          "title": { "type": "string" },
+          "text": { "type": "string" },
+          "is_gold": { "type": "boolean" },
+          "date": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      }
+    },
+    "ground_truth_answer": {
+      "type": "string",
+      "description": "Ground truth answer or expected abstention statement"
+    },
+    "expected_decision": {
+      "type": "string",
+      "enum": [
+        "SUFFICIENT",
+        "PARTIALLY_SUFFICIENT",
+        "INSUFFICIENT",
+        "CONFLICTING",
+        "IRRELEVANT"
+      ]
+    },
+    "supporting_passage_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of passages that provide positive factual evidence"
+    },
+    "contradictory_passage_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of passages that contradict the gold facts or each other"
+    },
+    "is_answerable": {
+      "type": "boolean",
+      "description": "True if the question can be fully answered from retrieved context"
+    },
+    "claim_breakdown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "supported", "supporting_passage_id"],
+        "properties": {
+          "claim": { "type": "string" },
+          "supported": { "type": "boolean" },
+          "supporting_passage_id": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "source_metadata": {
+      "type": "object",
+      "required": ["origin_benchmark", "curation_method", "verified_by"],
+      "properties": {
+        "origin_benchmark": { "type": "string" },
+        "curation_method": { "type": "string" },
+        "verified_by": { "type": "string" }
+      }
+    }
+  }
+}

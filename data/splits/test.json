@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "EG-CAT-A-021",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What are the three core principles of the zero trust security model?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-021-1",
+        "doc_id": "doc-A-5",
+        "title": "NIST SP 800-207: Zero Trust Architecture",
+        "text": "The Zero Trust security architecture is defined by three fundamental guiding tenets: 1) Verify explicitly: always authenticate and authorize based on all available data points; 2) Use least privilege access: limit user access with Just-In-Time and Just-Enough-Access; 3) Assume breach: minimize blast radius and segment access.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-021-2",
+        "doc_id": "doc-distractor-5",
+        "title": "Related Context on NIST SP 800-207: Zero Trust Architecture",
+        "text": "Traditional perimeter security relies on the castle-and-moat architecture, trusting all traffic originating from within the internal corporate LAN.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-021-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-021-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-022",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What are the three core principles of the zero trust security model? (Variant 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-022-1",
+        "doc_id": "doc-A-5",
+        "title": "NIST SP 800-207: Zero Trust Architecture",
+        "text": "The Zero Trust security architecture is defined by three fundamental guiding tenets: 1) Verify explicitly: always authenticate and authorize based on all available data points; 2) Use least privilege access: limit user access with Just-In-Time and Just-Enough-Access; 3) Assume breach: minimize blast radius and segment access.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-022-2",
+        "doc_id": "doc-distractor-5",
+        "title": "Related Context on NIST SP 800-207: Zero Trust Architecture",
+        "text": "Traditional perimeter security relies on the castle-and-moat architecture, trusting all traffic originating from within the internal corporate LAN.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-022-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-022-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-023",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What are the three core principles of the zero trust security model? (Variant 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-023-1",
+        "doc_id": "doc-A-5",
+        "title": "NIST SP 800-207: Zero Trust Architecture",
+        "text": "The Zero Trust security architecture is defined by three fundamental guiding tenets: 1) Verify explicitly: always authenticate and authorize based on all available data points; 2) Use least privilege access: limit user access with Just-In-Time and Just-Enough-Access; 3) Assume breach: minimize blast radius and segment access.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-023-2",
+        "doc_id": "doc-distractor-5",
+        "title": "Related Context on NIST SP 800-207: Zero Trust Architecture",
+        "text": "Traditional perimeter security relies on the castle-and-moat architecture, trusting all traffic originating from within the internal corporate LAN.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-023-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-023-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-024",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What are the three core principles of the zero trust security model? (Variant 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-024-1",
+        "doc_id": "doc-A-5",
+        "title": "NIST SP 800-207: Zero Trust Architecture",
+        "text": "The Zero Trust security architecture is defined by three fundamental guiding tenets: 1) Verify explicitly: always authenticate and authorize based on all available data points; 2) Use least privilege access: limit user access with Just-In-Time and Just-Enough-Access; 3) Assume breach: minimize blast radius and segment access.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-024-2",
+        "doc_id": "doc-distractor-5",
+        "title": "Related Context on NIST SP 800-207: Zero Trust Architecture",
+        "text": "Traditional perimeter security relies on the castle-and-moat architecture, trusting all traffic originating from within the internal corporate LAN.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-024-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-024-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-A-025",
+    "category": "A",
+    "category_name": "Answerable",
+    "question": "What are the three core principles of the zero trust security model? (Variant 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-A-025-1",
+        "doc_id": "doc-A-5",
+        "title": "NIST SP 800-207: Zero Trust Architecture",
+        "text": "The Zero Trust security architecture is defined by three fundamental guiding tenets: 1) Verify explicitly: always authenticate and authorize based on all available data points; 2) Use least privilege access: limit user access with Just-In-Time and Just-Enough-Access; 3) Assume breach: minimize blast radius and segment access.",
+        "is_gold": true,
+        "date": "2023-05-15",
+        "source": "Academic Publication / RFC"
+      },
+      {
+        "id": "p-EG-CAT-A-025-2",
+        "doc_id": "doc-distractor-5",
+        "title": "Related Context on NIST SP 800-207: Zero Trust Architecture",
+        "text": "Traditional perimeter security relies on the castle-and-moat architecture, trusting all traffic originating from within the internal corporate LAN.",
+        "is_gold": false,
+        "date": "2022-01-10",
+        "source": "Reference Manual"
+      }
+    ],
+    "ground_truth_answer": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-A-025-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "The three core principles of zero trust are: verify explicitly, apply least privilege access, and assume breach.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-A-025-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "Natural Questions / RFC Specs",
+      "curation_method": "Gold passage verification with verified topical distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-021",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What is the exact chemical antidote for poisoning caused by synthetic compound XG-9942?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-021-1",
+        "doc_id": "doc-B-5",
+        "title": "Laboratory Chemical Safety Standards",
+        "text": "Synthetic compound development requires rigorous toxicological evaluation under GLP guidelines. Hazardous laboratory compounds must be cataloged in Safety Data Sheets with appropriate PPE protocols.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-022",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What is the exact chemical antidote for poisoning caused by synthetic compound XG-9942? (Scenario 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-022-1",
+        "doc_id": "doc-B-5",
+        "title": "Laboratory Chemical Safety Standards",
+        "text": "Synthetic compound development requires rigorous toxicological evaluation under GLP guidelines. Hazardous laboratory compounds must be cataloged in Safety Data Sheets with appropriate PPE protocols.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-023",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What is the exact chemical antidote for poisoning caused by synthetic compound XG-9942? (Scenario 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-023-1",
+        "doc_id": "doc-B-5",
+        "title": "Laboratory Chemical Safety Standards",
+        "text": "Synthetic compound development requires rigorous toxicological evaluation under GLP guidelines. Hazardous laboratory compounds must be cataloged in Safety Data Sheets with appropriate PPE protocols.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-024",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What is the exact chemical antidote for poisoning caused by synthetic compound XG-9942? (Scenario 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-024-1",
+        "doc_id": "doc-B-5",
+        "title": "Laboratory Chemical Safety Standards",
+        "text": "Synthetic compound development requires rigorous toxicological evaluation under GLP guidelines. Hazardous laboratory compounds must be cataloged in Safety Data Sheets with appropriate PPE protocols.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-B-025",
+    "category": "B",
+    "category_name": "Unanswerable",
+    "question": "What is the exact chemical antidote for poisoning caused by synthetic compound XG-9942? (Scenario 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-B-025-1",
+        "doc_id": "doc-B-5",
+        "title": "Laboratory Chemical Safety Standards",
+        "text": "Synthetic compound development requires rigorous toxicological evaluation under GLP guidelines. Hazardous laboratory compounds must be cataloged in Safety Data Sheets with appropriate PPE protocols.",
+        "is_gold": false,
+        "date": "2023-11-01",
+        "source": "Archival Record"
+      }
+    ],
+    "ground_truth_answer": "INSUFFICIENT_EVIDENCE: The retrieved documents do not contain the answer to this question.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The requested fact is missing from the provided documents.",
+        "supported": true,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "SQuAD 2.0 unanswerability schema",
+      "curation_method": "Adversarial unanswerable query with highly overlapping entity distractor",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-021",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What are the contraindications for administering therapeutic heparin?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-021-1",
+        "doc_id": "doc-C1-5",
+        "title": "Cardiology History and Diagnostics",
+        "text": "Heparin was discovered in 1916 by Jay McLean and William Henry Howell at Johns Hopkins University while researching pro-coagulant phosphatides in canine liver tissue.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-021-2",
+        "doc_id": "doc-C2-5",
+        "title": "Supplemental Cardiology History and Diagnostics",
+        "text": "Cardiovascular medicine uses diagnostic cardiac catheterization and Doppler echocardiography to evaluate valvular heart disease and coronary artery patency.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-022",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What are the contraindications for administering therapeutic heparin? (Query 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-022-1",
+        "doc_id": "doc-C1-5",
+        "title": "Cardiology History and Diagnostics",
+        "text": "Heparin was discovered in 1916 by Jay McLean and William Henry Howell at Johns Hopkins University while researching pro-coagulant phosphatides in canine liver tissue.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-022-2",
+        "doc_id": "doc-C2-5",
+        "title": "Supplemental Cardiology History and Diagnostics",
+        "text": "Cardiovascular medicine uses diagnostic cardiac catheterization and Doppler echocardiography to evaluate valvular heart disease and coronary artery patency.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-023",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What are the contraindications for administering therapeutic heparin? (Query 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-023-1",
+        "doc_id": "doc-C1-5",
+        "title": "Cardiology History and Diagnostics",
+        "text": "Heparin was discovered in 1916 by Jay McLean and William Henry Howell at Johns Hopkins University while researching pro-coagulant phosphatides in canine liver tissue.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-023-2",
+        "doc_id": "doc-C2-5",
+        "title": "Supplemental Cardiology History and Diagnostics",
+        "text": "Cardiovascular medicine uses diagnostic cardiac catheterization and Doppler echocardiography to evaluate valvular heart disease and coronary artery patency.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-024",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What are the contraindications for administering therapeutic heparin? (Query 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-024-1",
+        "doc_id": "doc-C1-5",
+        "title": "Cardiology History and Diagnostics",
+        "text": "Heparin was discovered in 1916 by Jay McLean and William Henry Howell at Johns Hopkins University while researching pro-coagulant phosphatides in canine liver tissue.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-024-2",
+        "doc_id": "doc-C2-5",
+        "title": "Supplemental Cardiology History and Diagnostics",
+        "text": "Cardiovascular medicine uses diagnostic cardiac catheterization and Doppler echocardiography to evaluate valvular heart disease and coronary artery patency.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-C-025",
+    "category": "C",
+    "category_name": "Irrelevant Retrieval",
+    "question": "What are the contraindications for administering therapeutic heparin? (Query 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-C-025-1",
+        "doc_id": "doc-C1-5",
+        "title": "Cardiology History and Diagnostics",
+        "text": "Heparin was discovered in 1916 by Jay McLean and William Henry Howell at Johns Hopkins University while researching pro-coagulant phosphatides in canine liver tissue.",
+        "is_gold": false,
+        "date": "2021-08-20",
+        "source": "General Reference"
+      },
+      {
+        "id": "p-EG-CAT-C-025-2",
+        "doc_id": "doc-C2-5",
+        "title": "Supplemental Cardiology History and Diagnostics",
+        "text": "Cardiovascular medicine uses diagnostic cardiac catheterization and Doppler echocardiography to evaluate valvular heart disease and coronary artery patency.",
+        "is_gold": false,
+        "date": "2022-03-14",
+        "source": "General Reference"
+      }
+    ],
+    "ground_truth_answer": "IRRELEVANT_RETRIEVAL: The retrieved documents are topically adjacent but contain no evidence answering the query.",
+    "expected_decision": "IRRELEVANT",
+    "supporting_passage_ids": [],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Noise Robustness / Distractor suite)",
+      "curation_method": "High cosine similarity semantic distractors without gold information",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-021",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "Who directed the film Oppenheimer (2023) and what was its worldwide box office gross?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-021-1",
+        "doc_id": "doc-D-5",
+        "title": "Oppenheimer Film Overview",
+        "text": "Oppenheimer is a 2023 epic biographical drama film written and directed by Christopher Nolan. It stars Cillian Murphy as J. Robert Oppenheimer, the theoretical physicist who directed the Manhattan Project's Los Alamos Laboratory.",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan. However: The exact worldwide box office gross figure is missing from the retrieved context.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-021-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-021-1"
+      },
+      {
+        "claim": "The exact worldwide box office gross figure is missing from the retrieved context.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-022",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "Who directed the film Oppenheimer (2023) and what was its worldwide box office gross? (Part 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-022-1",
+        "doc_id": "doc-D-5",
+        "title": "Oppenheimer Film Overview",
+        "text": "Oppenheimer is a 2023 epic biographical drama film written and directed by Christopher Nolan. It stars Cillian Murphy as J. Robert Oppenheimer, the theoretical physicist who directed the Manhattan Project's Los Alamos Laboratory.",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan. However: The exact worldwide box office gross figure is missing from the retrieved context.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-022-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-022-1"
+      },
+      {
+        "claim": "The exact worldwide box office gross figure is missing from the retrieved context.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-023",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "Who directed the film Oppenheimer (2023) and what was its worldwide box office gross? (Part 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-023-1",
+        "doc_id": "doc-D-5",
+        "title": "Oppenheimer Film Overview",
+        "text": "Oppenheimer is a 2023 epic biographical drama film written and directed by Christopher Nolan. It stars Cillian Murphy as J. Robert Oppenheimer, the theoretical physicist who directed the Manhattan Project's Los Alamos Laboratory.",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan. However: The exact worldwide box office gross figure is missing from the retrieved context.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-023-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-023-1"
+      },
+      {
+        "claim": "The exact worldwide box office gross figure is missing from the retrieved context.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-024",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "Who directed the film Oppenheimer (2023) and what was its worldwide box office gross? (Part 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-024-1",
+        "doc_id": "doc-D-5",
+        "title": "Oppenheimer Film Overview",
+        "text": "Oppenheimer is a 2023 epic biographical drama film written and directed by Christopher Nolan. It stars Cillian Murphy as J. Robert Oppenheimer, the theoretical physicist who directed the Manhattan Project's Los Alamos Laboratory.",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan. However: The exact worldwide box office gross figure is missing from the retrieved context.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-024-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-024-1"
+      },
+      {
+        "claim": "The exact worldwide box office gross figure is missing from the retrieved context.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-D-025",
+    "category": "D",
+    "category_name": "Partial Evidence",
+    "question": "Who directed the film Oppenheimer (2023) and what was its worldwide box office gross? (Part 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-D-025-1",
+        "doc_id": "doc-D-5",
+        "title": "Oppenheimer Film Overview",
+        "text": "Oppenheimer is a 2023 epic biographical drama film written and directed by Christopher Nolan. It stars Cillian Murphy as J. Robert Oppenheimer, the theoretical physicist who directed the Manhattan Project's Los Alamos Laboratory.",
+        "is_gold": true,
+        "date": "2024-02-18",
+        "source": "Technical Brief"
+      }
+    ],
+    "ground_truth_answer": "PARTIALLY_SUFFICIENT: The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan. However: The exact worldwide box office gross figure is missing from the retrieved context.",
+    "expected_decision": "PARTIALLY_SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-D-025-1"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "The 2023 biographical drama film Oppenheimer was directed by Christopher Nolan.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-D-025-1"
+      },
+      {
+        "claim": "The exact worldwide box office gross figure is missing from the retrieved context.",
+        "supported": false,
+        "supporting_passage_id": null
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Composite Query Benchmark",
+      "curation_method": "Multi-part questions with one substantiated sub-claim and one missing sub-claim",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-021",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "In what year was the ancient city of Troy VII destroyed according to archaeological dating?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-021-1",
+        "doc_id": "doc-E1-5",
+        "title": "Mediterranean Archaeology Bulletin",
+        "text": "Ceramic analysis from the late Bronze Age strata indicates that Troy VIIa suffered catastrophic fire destruction around 1180 BCE, corresponding to early Greek epic timelines.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "Mediterranean Archaeology Bulletin"
+      },
+      {
+        "id": "p-EG-CAT-E-021-2",
+        "doc_id": "doc-E2-5",
+        "title": "Near Eastern Chronology Studies",
+        "text": "Radiocarbon analysis of organic seeds from the destruction layer of Troy VIIa confirms the city was destroyed around 1250 BCE due to seismic activity rather than siege warfare.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "Near Eastern Chronology Studies"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Dating discrepancy: 1180 BCE (ceramic) vs. 1250 BCE (radiocarbon). Archaeological excavation A dates the destruction to 1180 BCE. whereas Archaeological excavation B dates the destruction to 1250 BCE.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-021-1",
+      "p-EG-CAT-E-021-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-021-1",
+      "p-EG-CAT-E-021-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Archaeological excavation A dates the destruction to 1180 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-021-1"
+      },
+      {
+        "claim": "Archaeological excavation B dates the destruction to 1250 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-021-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-022",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "In what year was the ancient city of Troy VII destroyed according to archaeological dating? (Perspective 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-022-1",
+        "doc_id": "doc-E1-5",
+        "title": "Mediterranean Archaeology Bulletin",
+        "text": "Ceramic analysis from the late Bronze Age strata indicates that Troy VIIa suffered catastrophic fire destruction around 1180 BCE, corresponding to early Greek epic timelines.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "Mediterranean Archaeology Bulletin"
+      },
+      {
+        "id": "p-EG-CAT-E-022-2",
+        "doc_id": "doc-E2-5",
+        "title": "Near Eastern Chronology Studies",
+        "text": "Radiocarbon analysis of organic seeds from the destruction layer of Troy VIIa confirms the city was destroyed around 1250 BCE due to seismic activity rather than siege warfare.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "Near Eastern Chronology Studies"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Dating discrepancy: 1180 BCE (ceramic) vs. 1250 BCE (radiocarbon). Archaeological excavation A dates the destruction to 1180 BCE. whereas Archaeological excavation B dates the destruction to 1250 BCE.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-022-1",
+      "p-EG-CAT-E-022-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-022-1",
+      "p-EG-CAT-E-022-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Archaeological excavation A dates the destruction to 1180 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-022-1"
+      },
+      {
+        "claim": "Archaeological excavation B dates the destruction to 1250 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-022-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-023",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "In what year was the ancient city of Troy VII destroyed according to archaeological dating? (Perspective 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-023-1",
+        "doc_id": "doc-E1-5",
+        "title": "Mediterranean Archaeology Bulletin",
+        "text": "Ceramic analysis from the late Bronze Age strata indicates that Troy VIIa suffered catastrophic fire destruction around 1180 BCE, corresponding to early Greek epic timelines.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "Mediterranean Archaeology Bulletin"
+      },
+      {
+        "id": "p-EG-CAT-E-023-2",
+        "doc_id": "doc-E2-5",
+        "title": "Near Eastern Chronology Studies",
+        "text": "Radiocarbon analysis of organic seeds from the destruction layer of Troy VIIa confirms the city was destroyed around 1250 BCE due to seismic activity rather than siege warfare.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "Near Eastern Chronology Studies"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Dating discrepancy: 1180 BCE (ceramic) vs. 1250 BCE (radiocarbon). Archaeological excavation A dates the destruction to 1180 BCE. whereas Archaeological excavation B dates the destruction to 1250 BCE.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-023-1",
+      "p-EG-CAT-E-023-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-023-1",
+      "p-EG-CAT-E-023-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Archaeological excavation A dates the destruction to 1180 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-023-1"
+      },
+      {
+        "claim": "Archaeological excavation B dates the destruction to 1250 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-023-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-024",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "In what year was the ancient city of Troy VII destroyed according to archaeological dating? (Perspective 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-024-1",
+        "doc_id": "doc-E1-5",
+        "title": "Mediterranean Archaeology Bulletin",
+        "text": "Ceramic analysis from the late Bronze Age strata indicates that Troy VIIa suffered catastrophic fire destruction around 1180 BCE, corresponding to early Greek epic timelines.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "Mediterranean Archaeology Bulletin"
+      },
+      {
+        "id": "p-EG-CAT-E-024-2",
+        "doc_id": "doc-E2-5",
+        "title": "Near Eastern Chronology Studies",
+        "text": "Radiocarbon analysis of organic seeds from the destruction layer of Troy VIIa confirms the city was destroyed around 1250 BCE due to seismic activity rather than siege warfare.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "Near Eastern Chronology Studies"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Dating discrepancy: 1180 BCE (ceramic) vs. 1250 BCE (radiocarbon). Archaeological excavation A dates the destruction to 1180 BCE. whereas Archaeological excavation B dates the destruction to 1250 BCE.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-024-1",
+      "p-EG-CAT-E-024-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-024-1",
+      "p-EG-CAT-E-024-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Archaeological excavation A dates the destruction to 1180 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-024-1"
+      },
+      {
+        "claim": "Archaeological excavation B dates the destruction to 1250 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-024-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-E-025",
+    "category": "E",
+    "category_name": "Conflicting Evidence",
+    "question": "In what year was the ancient city of Troy VII destroyed according to archaeological dating? (Perspective 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-E-025-1",
+        "doc_id": "doc-E1-5",
+        "title": "Mediterranean Archaeology Bulletin",
+        "text": "Ceramic analysis from the late Bronze Age strata indicates that Troy VIIa suffered catastrophic fire destruction around 1180 BCE, corresponding to early Greek epic timelines.",
+        "is_gold": true,
+        "date": "2023-01-15",
+        "source": "Mediterranean Archaeology Bulletin"
+      },
+      {
+        "id": "p-EG-CAT-E-025-2",
+        "doc_id": "doc-E2-5",
+        "title": "Near Eastern Chronology Studies",
+        "text": "Radiocarbon analysis of organic seeds from the destruction layer of Troy VIIa confirms the city was destroyed around 1250 BCE due to seismic activity rather than siege warfare.",
+        "is_gold": true,
+        "date": "2023-04-10",
+        "source": "Near Eastern Chronology Studies"
+      }
+    ],
+    "ground_truth_answer": "CONFLICTING_EVIDENCE: The retrieved documents present conflicting information regarding this question. Dating discrepancy: 1180 BCE (ceramic) vs. 1250 BCE (radiocarbon). Archaeological excavation A dates the destruction to 1180 BCE. whereas Archaeological excavation B dates the destruction to 1250 BCE.",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-E-025-1",
+      "p-EG-CAT-E-025-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-E-025-1",
+      "p-EG-CAT-E-025-2"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "Archaeological excavation A dates the destruction to 1180 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-025-1"
+      },
+      {
+        "claim": "Archaeological excavation B dates the destruction to 1250 BCE.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-E-025-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual & Conflict Suite)",
+      "curation_method": "Pairwise conflicting passages from distinct authoritative sources",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-021",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What is the name of the father of the CEO who founded SpaceX?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-021-1",
+        "doc_id": "doc-F1-5",
+        "title": "SpaceX Corporate History",
+        "text": "Space Exploration Technologies Corp. (SpaceX) was founded in May 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs.",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "SpaceX Corporate History"
+      },
+      {
+        "id": "p-EG-CAT-F-021-2",
+        "doc_id": "doc-F2-5",
+        "title": "Elon Musk Family Background",
+        "text": "Elon Musk was born in Pretoria, South Africa, to Maye Musk and Errol Musk, a South African electromechanical engineer and pilot.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Elon Musk Family Background"
+      }
+    ],
+    "ground_truth_answer": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-021-1",
+      "p-EG-CAT-F-021-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-021-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-022",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What is the name of the father of the CEO who founded SpaceX? (Hop 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-022-1",
+        "doc_id": "doc-F1-5",
+        "title": "SpaceX Corporate History",
+        "text": "Space Exploration Technologies Corp. (SpaceX) was founded in May 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs.",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "SpaceX Corporate History"
+      },
+      {
+        "id": "p-EG-CAT-F-022-2",
+        "doc_id": "doc-F2-5",
+        "title": "Elon Musk Family Background",
+        "text": "Elon Musk was born in Pretoria, South Africa, to Maye Musk and Errol Musk, a South African electromechanical engineer and pilot.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Elon Musk Family Background"
+      }
+    ],
+    "ground_truth_answer": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-022-1",
+      "p-EG-CAT-F-022-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-022-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-023",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What is the name of the father of the CEO who founded SpaceX? (Hop 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-023-1",
+        "doc_id": "doc-F1-5",
+        "title": "SpaceX Corporate History",
+        "text": "Space Exploration Technologies Corp. (SpaceX) was founded in May 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs.",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "SpaceX Corporate History"
+      },
+      {
+        "id": "p-EG-CAT-F-023-2",
+        "doc_id": "doc-F2-5",
+        "title": "Elon Musk Family Background",
+        "text": "Elon Musk was born in Pretoria, South Africa, to Maye Musk and Errol Musk, a South African electromechanical engineer and pilot.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Elon Musk Family Background"
+      }
+    ],
+    "ground_truth_answer": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-023-1",
+      "p-EG-CAT-F-023-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-023-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-024",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What is the name of the father of the CEO who founded SpaceX? (Hop 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-024-1",
+        "doc_id": "doc-F1-5",
+        "title": "SpaceX Corporate History",
+        "text": "Space Exploration Technologies Corp. (SpaceX) was founded in May 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs.",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "SpaceX Corporate History"
+      },
+      {
+        "id": "p-EG-CAT-F-024-2",
+        "doc_id": "doc-F2-5",
+        "title": "Elon Musk Family Background",
+        "text": "Elon Musk was born in Pretoria, South Africa, to Maye Musk and Errol Musk, a South African electromechanical engineer and pilot.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Elon Musk Family Background"
+      }
+    ],
+    "ground_truth_answer": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-024-1",
+      "p-EG-CAT-F-024-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-024-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-F-025",
+    "category": "F",
+    "category_name": "Multi-Hop Evidence",
+    "question": "What is the name of the father of the CEO who founded SpaceX? (Hop 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-F-025-1",
+        "doc_id": "doc-F1-5",
+        "title": "SpaceX Corporate History",
+        "text": "Space Exploration Technologies Corp. (SpaceX) was founded in May 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs.",
+        "is_gold": true,
+        "date": "2023-08-12",
+        "source": "SpaceX Corporate History"
+      },
+      {
+        "id": "p-EG-CAT-F-025-2",
+        "doc_id": "doc-F2-5",
+        "title": "Elon Musk Family Background",
+        "text": "Elon Musk was born in Pretoria, South Africa, to Maye Musk and Errol Musk, a South African electromechanical engineer and pilot.",
+        "is_gold": true,
+        "date": "2023-09-01",
+        "source": "Elon Musk Family Background"
+      }
+    ],
+    "ground_truth_answer": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+    "expected_decision": "SUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-F-025-1",
+      "p-EG-CAT-F-025-2"
+    ],
+    "contradictory_passage_ids": [],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "SpaceX was founded by Elon Musk, whose father is Errol Musk.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-F-025-1"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "HotpotQA Multi-Hop Benchmark",
+      "curation_method": "Multi-hop bridge entities across two distinct articles",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-021",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the default web browser shipped with Windows operating systems?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-021-1",
+        "doc_id": "doc-G-old-5",
+        "title": "Windows Technical Reference (2014)",
+        "text": "Internet Explorer is the default web browser included with Microsoft Windows desktop operating systems.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "Windows Technical Reference (2014)"
+      },
+      {
+        "id": "p-EG-CAT-G-021-2",
+        "doc_id": "doc-G-new-5",
+        "title": "Microsoft OS Lifecycle Policy (2022)",
+        "text": "Microsoft officially retired Internet Explorer on June 15, 2022, replacing it with the Chromium-based Microsoft Edge as the default browser across Windows 10 and 11.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Microsoft OS Lifecycle Policy (2022)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-021-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-021-1",
+      "p-EG-CAT-G-021-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-021-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-022",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the default web browser shipped with Windows operating systems? (Temporal 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-022-1",
+        "doc_id": "doc-G-old-5",
+        "title": "Windows Technical Reference (2014)",
+        "text": "Internet Explorer is the default web browser included with Microsoft Windows desktop operating systems.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "Windows Technical Reference (2014)"
+      },
+      {
+        "id": "p-EG-CAT-G-022-2",
+        "doc_id": "doc-G-new-5",
+        "title": "Microsoft OS Lifecycle Policy (2022)",
+        "text": "Microsoft officially retired Internet Explorer on June 15, 2022, replacing it with the Chromium-based Microsoft Edge as the default browser across Windows 10 and 11.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Microsoft OS Lifecycle Policy (2022)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-022-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-022-1",
+      "p-EG-CAT-G-022-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-022-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-023",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the default web browser shipped with Windows operating systems? (Temporal 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-023-1",
+        "doc_id": "doc-G-old-5",
+        "title": "Windows Technical Reference (2014)",
+        "text": "Internet Explorer is the default web browser included with Microsoft Windows desktop operating systems.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "Windows Technical Reference (2014)"
+      },
+      {
+        "id": "p-EG-CAT-G-023-2",
+        "doc_id": "doc-G-new-5",
+        "title": "Microsoft OS Lifecycle Policy (2022)",
+        "text": "Microsoft officially retired Internet Explorer on June 15, 2022, replacing it with the Chromium-based Microsoft Edge as the default browser across Windows 10 and 11.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Microsoft OS Lifecycle Policy (2022)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-023-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-023-1",
+      "p-EG-CAT-G-023-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-023-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-024",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the default web browser shipped with Windows operating systems? (Temporal 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-024-1",
+        "doc_id": "doc-G-old-5",
+        "title": "Windows Technical Reference (2014)",
+        "text": "Internet Explorer is the default web browser included with Microsoft Windows desktop operating systems.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "Windows Technical Reference (2014)"
+      },
+      {
+        "id": "p-EG-CAT-G-024-2",
+        "doc_id": "doc-G-new-5",
+        "title": "Microsoft OS Lifecycle Policy (2022)",
+        "text": "Microsoft officially retired Internet Explorer on June 15, 2022, replacing it with the Chromium-based Microsoft Edge as the default browser across Windows 10 and 11.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Microsoft OS Lifecycle Policy (2022)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-024-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-024-1",
+      "p-EG-CAT-G-024-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-024-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-G-025",
+    "category": "G",
+    "category_name": "Outdated Evidence",
+    "question": "What is the default web browser shipped with Windows operating systems? (Temporal 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-G-025-1",
+        "doc_id": "doc-G-old-5",
+        "title": "Windows Technical Reference (2014)",
+        "text": "Internet Explorer is the default web browser included with Microsoft Windows desktop operating systems.",
+        "is_gold": false,
+        "date": "2015-06-01",
+        "source": "Windows Technical Reference (2014)"
+      },
+      {
+        "id": "p-EG-CAT-G-025-2",
+        "doc_id": "doc-G-new-5",
+        "title": "Microsoft OS Lifecycle Policy (2022)",
+        "text": "Microsoft officially retired Internet Explorer on June 15, 2022, replacing it with the Chromium-based Microsoft Edge as the default browser across Windows 10 and 11.",
+        "is_gold": true,
+        "date": "2023-10-15",
+        "source": "Microsoft OS Lifecycle Policy (2022)"
+      }
+    ],
+    "ground_truth_answer": "TEMPORAL_RESOLUTION: Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022. (Older source from 2015 is superseded by recent source from 2023).",
+    "expected_decision": "CONFLICTING",
+    "supporting_passage_ids": [
+      "p-EG-CAT-G-025-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-G-025-1",
+      "p-EG-CAT-G-025-2"
+    ],
+    "is_answerable": true,
+    "claim_breakdown": [
+      {
+        "claim": "Microsoft Edge (Chromium-based) is the default browser, having fully replaced Internet Explorer which was retired in June 2022.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-G-025-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "EvidenceGuard Temporal Benchmark",
+      "curation_method": "Temporal obsolescence pairing older document with newer verified document",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-021",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "What allows mammals to breathe underwater without lungs or gills?",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-021-1",
+        "doc_id": "doc-H-fake-5",
+        "title": "Fictional Biology Wiki",
+        "text": "Aquatic mammals absorb dissolved oxygen directly through specialized dermal micro-pores in their skin, allowing perpetual submersion without breathing air.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Fictional Biology Wiki"
+      },
+      {
+        "id": "p-EG-CAT-H-021-2",
+        "doc_id": "doc-H-fact-5",
+        "title": "Encyclopedia of Marine Mammals",
+        "text": "Marine mammals such as cetaceans and pinnipeds possess lungs and breath air into their pulmonary system through blowholes or nostrils when surfacing.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "Encyclopedia of Marine Mammals"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-021-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-021-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-021-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-022",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "What allows mammals to breathe underwater without lungs or gills? (Counterfactual 1)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-022-1",
+        "doc_id": "doc-H-fake-5",
+        "title": "Fictional Biology Wiki",
+        "text": "Aquatic mammals absorb dissolved oxygen directly through specialized dermal micro-pores in their skin, allowing perpetual submersion without breathing air.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Fictional Biology Wiki"
+      },
+      {
+        "id": "p-EG-CAT-H-022-2",
+        "doc_id": "doc-H-fact-5",
+        "title": "Encyclopedia of Marine Mammals",
+        "text": "Marine mammals such as cetaceans and pinnipeds possess lungs and breath air into their pulmonary system through blowholes or nostrils when surfacing.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "Encyclopedia of Marine Mammals"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-022-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-022-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-022-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-023",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "What allows mammals to breathe underwater without lungs or gills? (Counterfactual 2)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-023-1",
+        "doc_id": "doc-H-fake-5",
+        "title": "Fictional Biology Wiki",
+        "text": "Aquatic mammals absorb dissolved oxygen directly through specialized dermal micro-pores in their skin, allowing perpetual submersion without breathing air.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Fictional Biology Wiki"
+      },
+      {
+        "id": "p-EG-CAT-H-023-2",
+        "doc_id": "doc-H-fact-5",
+        "title": "Encyclopedia of Marine Mammals",
+        "text": "Marine mammals such as cetaceans and pinnipeds possess lungs and breath air into their pulmonary system through blowholes or nostrils when surfacing.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "Encyclopedia of Marine Mammals"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-023-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-023-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-023-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-024",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "What allows mammals to breathe underwater without lungs or gills? (Counterfactual 3)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-024-1",
+        "doc_id": "doc-H-fake-5",
+        "title": "Fictional Biology Wiki",
+        "text": "Aquatic mammals absorb dissolved oxygen directly through specialized dermal micro-pores in their skin, allowing perpetual submersion without breathing air.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Fictional Biology Wiki"
+      },
+      {
+        "id": "p-EG-CAT-H-024-2",
+        "doc_id": "doc-H-fact-5",
+        "title": "Encyclopedia of Marine Mammals",
+        "text": "Marine mammals such as cetaceans and pinnipeds possess lungs and breath air into their pulmonary system through blowholes or nostrils when surfacing.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "Encyclopedia of Marine Mammals"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-024-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-024-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-024-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  },
+  {
+    "id": "EG-CAT-H-025",
+    "category": "H",
+    "category_name": "Misleading Context",
+    "question": "What allows mammals to breathe underwater without lungs or gills? (Counterfactual 4)",
+    "passages": [
+      {
+        "id": "p-EG-CAT-H-025-1",
+        "doc_id": "doc-H-fake-5",
+        "title": "Fictional Biology Wiki",
+        "text": "Aquatic mammals absorb dissolved oxygen directly through specialized dermal micro-pores in their skin, allowing perpetual submersion without breathing air.",
+        "is_gold": false,
+        "date": "2020-04-01",
+        "source": "Fictional Biology Wiki"
+      },
+      {
+        "id": "p-EG-CAT-H-025-2",
+        "doc_id": "doc-H-fact-5",
+        "title": "Encyclopedia of Marine Mammals",
+        "text": "Marine mammals such as cetaceans and pinnipeds possess lungs and breath air into their pulmonary system through blowholes or nostrils when surfacing.",
+        "is_gold": true,
+        "date": "2023-01-10",
+        "source": "Encyclopedia of Marine Mammals"
+      }
+    ],
+    "ground_truth_answer": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+    "expected_decision": "INSUFFICIENT",
+    "supporting_passage_ids": [
+      "p-EG-CAT-H-025-2"
+    ],
+    "contradictory_passage_ids": [
+      "p-EG-CAT-H-025-1"
+    ],
+    "is_answerable": false,
+    "claim_breakdown": [
+      {
+        "claim": "REJECT_PREMISE: Mammals cannot breathe underwater; all aquatic mammals (such as whales and dolphins) possess lungs and must surface to breathe atmospheric air.",
+        "supported": true,
+        "supporting_passage_id": "p-EG-CAT-H-025-2"
+      }
+    ],
+    "source_metadata": {
+      "origin_benchmark": "RGB Benchmark (Counterfactual Robustness)",
+      "curation_method": "Counterfactual distractor designed to test false premise rejection",
+      "verified_by": "Senior Research Engineer"
+    }
+  }
+]

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvidenceGuard RAG: Hallucination-Resistant Architecture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #0b0f19; color: #e2e8f0; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
+    .glass-card { background: rgba(17, 24, 39, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .badge-sufficient { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-partial { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-insufficient { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+    .badge-conflicting { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+    .badge-irrelevant { background: rgba(107, 114, 128, 0.2); color: #9ca3af; border: 1px solid rgba(107, 114, 128, 0.3); }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function App() {
+      const [activeTab, setActiveTab] = useState("playground");
+      const [query, setQuery] = useState("");
+      const [mode, setMode] = useState("evidenceguard");
+      const [loading, setLoading] = useState(false);
+      const [response, setResponse] = useState(null);
+      const [health, setHealth] = useState(null);
+      const [documents, setDocuments] = useState([]);
+      const [traceOpen, setTraceOpen] = useState(false);
+      const [experiments, setExperiments] = useState([]);
+      const [selectedExp, setSelectedExp] = useState(null);
+      const [expContent, setExpContent] = useState("");
+
+      // Fetch health & docs on load
+      useEffect(() => {
+        fetchHealth();
+        fetchDocuments();
+        fetchExperiments();
+      }, []);
+
+      const fetchHealth = () => {
+        fetch("/health")
+          .then(res => res.json())
+          .then(data => setHealth(data))
+          .catch(err => console.log("API not reachable yet", err));
+      };
+
+      const fetchDocuments = () => {
+        fetch("/documents")
+          .then(res => res.json())
+          .then(data => setDocuments(data.documents || []))
+          .catch(err => console.log(err));
+      };
+
+      const fetchExperiments = () => {
+        fetch("/experiments")
+          .then(res => res.json())
+          .then(data => setExperiments(data.experiments || []))
+          .catch(err => console.log(err));
+      };
+
+      const handleQuery = async (e) => {
+        e.preventDefault();
+        if (!query.trim()) return;
+        setLoading(true);
+        setResponse(null);
+        try {
+          const res = await fetch("/query", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query, mode, top_k: 5 })
+          });
+          const data = await res.json();
+          setResponse(data);
+        } catch (err) {
+          alert("Query error: " + err);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      const handleUpload = async (e) => {
+        e.preventDefault();
+        const fileInput = document.getElementById("file-upload");
+        if (!fileInput.files[0]) return;
+        const formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+        formData.append("strategy", "recursive");
+        
+        try {
+          const res = await fetch("/documents/upload", {
+            method: "POST",
+            body: formData
+          });
+          const data = await res.json();
+          alert("Document uploaded: " + data.title + " (" + data.chunks_indexed + " chunks)");
+          fetchDocuments();
+          fetchHealth();
+        } catch (err) {
+          alert("Upload error: " + err);
+        }
+      };
+
+      const loadExpReport = async (expId) => {
+        setSelectedExp(expId);
+        try {
+          const res = await fetch(`/experiments/${expId}`);
+          const data = await res.json();
+          setExpContent(data.content);
+        } catch (err) {
+          setExpContent("Failed to load experiment report.");
+        }
+      };
+
+      const getDecisionBadge = (decision) => {
+        switch (decision) {
+          case "SUFFICIENT":
+            return <span className="badge-sufficient px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"><i className="fa-solid fa-check-circle mr-1"></i> Sufficient Evidence</span>;
+          case "PARTIALLY_SUFFICIENT":
+            return <span className="badge-partial px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"><i className="fa-solid fa-triangle-exclamation mr-1"></i> Partial Evidence</span>;
+          case "CONFLICTING":
+            return <span className="badge-conflicting px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"><i className="fa-solid fa-bolt mr-1"></i> Conflicting Sources</span>;
+          case "IRRELEVANT":
+            return <span className="badge-irrelevant px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"><i className="fa-solid fa-filter mr-1"></i> Irrelevant Context</span>;
+          default:
+            return <span className="badge-insufficient px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"><i className="fa-solid fa-ban mr-1"></i> Insufficient Evidence (Abstain)</span>;
+        }
+      };
+
+      return (
+        <div className="flex flex-col min-h-screen">
+          {/* Header */}
+          <header className="glass-card sticky top-0 z-50 px-6 py-4 flex items-center justify-between border-b border-gray-800">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30">
+                <i className="fa-solid fa-shield-halved text-lg"></i>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                  EvidenceGuard <span className="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">v1.0-PROD</span>
+                </h1>
+                <p className="text-xs text-gray-400">Hallucination-Resistant Retrieval-Augmented Generation Architecture</p>
+              </div>
+            </div>
+
+            {/* Navigation Tabs */}
+            <div className="flex space-x-1 bg-gray-900/80 p-1 rounded-xl border border-gray-800">
+              <button 
+                onClick={() => setActiveTab("playground")}
+                className={`px-4 py-1.5 rounded-lg text-sm font-medium transition ${activeTab === 'playground' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-gray-200'}`}>
+                <i className="fa-solid fa-vial mr-2"></i>Playground
+              </button>
+              <button 
+                onClick={() => setActiveTab("documents")}
+                className={`px-4 py-1.5 rounded-lg text-sm font-medium transition ${activeTab === 'documents' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-gray-200'}`}>
+                <i className="fa-solid fa-database mr-2"></i>Documents ({documents.length})
+              </button>
+              <button 
+                onClick={() => setActiveTab("experiments")}
+                className={`px-4 py-1.5 rounded-lg text-sm font-medium transition ${activeTab === 'experiments' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-gray-200'}`}>
+                <i className="fa-solid fa-chart-line mr-2"></i>Experiments & Benchmarks
+              </button>
+            </div>
+
+            {/* Hardware badge */}
+            <div className="hidden lg:flex items-center space-x-3 text-xs text-gray-400 border border-gray-800 bg-gray-900/50 px-3 py-1.5 rounded-xl">
+              <span className="flex items-center text-emerald-400"><span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span>{health?.device || "RTX 4080 SUPER"}</span>
+              <span className="text-gray-600">|</span>
+              <span>Chunks: <strong className="text-gray-200">{health?.indexed_chunks || 0}</strong></span>
+            </div>
+          </header>
+
+          {/* Main Body */}
+          <main className="flex-1 max-w-7xl w-full mx-auto p-6">
+            {activeTab === "playground" && (
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                {/* Left query column */}
+                <div className="lg:col-span-5 space-y-6">
+                  <div className="glass-card rounded-2xl p-6">
+                    <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+                      <i className="fa-solid fa-sliders text-indigo-400 mr-2"></i> Query Controls
+                    </h2>
+                    
+                    {/* Mode Toggle */}
+                    <div className="mb-4">
+                      <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">RAG Architecture Mode</label>
+                      <div className="grid grid-cols-2 gap-2 bg-gray-900 p-1 rounded-xl border border-gray-800">
+                        <button
+                          type="button"
+                          onClick={() => setMode("evidenceguard")}
+                          className={`py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition ${mode === 'evidenceguard' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-gray-200'}`}>
+                          <i className="fa-solid fa-shield-halved"></i> EvidenceGuard RAG
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setMode("baseline")}
+                          className={`py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition ${mode === 'baseline' ? 'bg-amber-600/80 text-white shadow' : 'text-gray-400 hover:text-gray-200'}`}>
+                          <i className="fa-solid fa-robot"></i> Baseline Naive RAG
+                        </button>
+                      </div>
+                    </div>
+
+                    <form onSubmit={handleQuery} className="space-y-4">
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">User Question</label>
+                        <textarea
+                          rows="4"
+                          value={query}
+                          onChange={(e) => setQuery(e.target.value)}
+                          placeholder="e.g. What is the primary mechanism of action of metformin in treating type 2 diabetes?"
+                          className="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-sm text-gray-200 focus:outline-none focus:border-indigo-500 transition resize-none"></textarea>
+                      </div>
+
+                      {/* Quick query buttons */}
+                      <div className="space-y-1.5">
+                        <span className="text-[11px] font-medium text-gray-500">Benchmark Quick Samples:</span>
+                        <div className="flex flex-wrap gap-1.5">
+                          <button
+                            type="button"
+                            onClick={() => setQuery("What is the primary mechanism of action of metformin in treating type 2 diabetes?")}
+                            className="text-xs bg-gray-800/60 hover:bg-gray-800 text-gray-300 px-2.5 py-1 rounded-lg border border-gray-700/50 transition">
+                            Cat A (Answerable)
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setQuery("What was the exact battery capacity in watt-hours of Nikola Tesla's original 1888 electric automobile prototype?")}
+                            className="text-xs bg-gray-800/60 hover:bg-gray-800 text-red-300 px-2.5 py-1 rounded-lg border border-red-900/30 transition">
+                            Cat B (Unanswerable)
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setQuery("What was the total global production volume of Boeing 737 aircraft in the calendar year 2023?")}
+                            className="text-xs bg-gray-800/60 hover:bg-gray-800 text-purple-300 px-2.5 py-1 rounded-lg border border-purple-900/30 transition">
+                            Cat E (Conflicting)
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setQuery("What are the two active ingredients in Paxlovid, and what is its standard clinical course duration?")}
+                            className="text-xs bg-gray-800/60 hover:bg-gray-800 text-amber-300 px-2.5 py-1 rounded-lg border border-amber-900/30 transition">
+                            Cat D (Partial)
+                          </button>
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        disabled={loading}
+                        className="w-full py-3 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-semibold rounded-xl text-sm transition shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+                        {loading ? <span className="animate-spin mr-2"><i className="fa-solid fa-circle-notch"></i></span> : <i className="fa-solid fa-play"></i>}
+                        {loading ? "Analyzing Evidence..." : "Execute Query"}
+                      </button>
+                    </form>
+                  </div>
+                </div>
+
+                {/* Right Response & Inspection column */}
+                <div className="lg:col-span-7 space-y-6">
+                  {response ? (
+                    <div className="space-y-6">
+                      {/* Main Answer Card */}
+                      <div className="glass-card rounded-2xl p-6 relative overflow-hidden">
+                        <div className="flex items-center justify-between mb-4 border-b border-gray-800/60 pb-3">
+                          <div className="flex items-center gap-2">
+                            {getDecisionBadge(response.decision)}
+                            <span className="text-xs text-gray-400 ml-2">Confidence: <strong className="text-gray-200">{(response.confidence * 100).toFixed(1)}%</strong></span>
+                          </div>
+                          <span className="text-xs text-gray-500"><i className="fa-regular fa-clock mr-1"></i>{response.latency_ms.toFixed(1)} ms</span>
+                        </div>
+
+                        {/* Answer text */}
+                        <div className="prose prose-invert max-w-none">
+                          <p className="text-base text-gray-100 leading-relaxed font-sans">{response.answer}</p>
+                        </div>
+
+                        {/* Abstention or Conflict Callouts */}
+                        {response.abstention_reason && (
+                          <div className="mt-4 p-3.5 rounded-xl bg-red-950/30 border border-red-800/40 text-red-300 text-xs flex items-start gap-2.5">
+                            <i className="fa-solid fa-shield-virus text-base mt-0.5 text-red-400"></i>
+                            <div>
+                              <strong className="block text-red-200 font-semibold mb-0.5">Calibrated Epistemic Abstention:</strong>
+                              {response.abstention_reason}
+                            </div>
+                          </div>
+                        )}
+
+                        {response.conflicts?.has_conflict && (
+                          <div className="mt-4 p-3.5 rounded-xl bg-purple-950/30 border border-purple-800/40 text-purple-300 text-xs flex items-start gap-2.5">
+                            <i className="fa-solid fa-bolt text-base mt-0.5 text-purple-400"></i>
+                            <div>
+                              <strong className="block text-purple-200 font-semibold mb-0.5">Factual Discrepancy Flagged:</strong>
+                              {response.conflicts.explanation}
+                              <ul className="list-disc list-inside mt-1.5 space-y-0.5 text-purple-200">
+                                {response.conflicts.conflicting_claims.map((c, i) => (
+                                  <li key={i}>{c}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Trace Toggle Button */}
+                        <div className="mt-5 pt-4 border-t border-gray-800 flex items-center justify-between">
+                          <span className="text-xs text-gray-400"><i className="fa-solid fa-check-double text-emerald-400 mr-1.5"></i>{response.citations.length} Verified Citations</span>
+                          <button
+                            type="button"
+                            onClick={() => setTraceOpen(!traceOpen)}
+                            className="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-1.5">
+                            <i className="fa-solid fa-network-wired"></i>
+                            {traceOpen ? "Hide Graph Trace" : "Inspect Execution Trace"}
+                            <i className={`fa-solid fa-chevron-down transition-transform ${traceOpen ? 'rotate-180' : ''}`}></i>
+                          </button>
+                        </div>
+
+                        {/* Trace Drawer */}
+                        {traceOpen && (
+                          <div className="mt-4 bg-gray-950/70 p-4 rounded-xl border border-gray-800 space-y-2 text-xs font-mono">
+                            <h4 className="font-semibold text-gray-300 mb-2 font-sans flex items-center gap-1.5">
+                              <i className="fa-solid fa-diagram-project text-indigo-400"></i> LangGraph Node Execution Trace:
+                            </h4>
+                            {response.execution_trace.map((step, idx) => (
+                              <div key={idx} className="flex items-center justify-between p-2 rounded bg-gray-900/60 border border-gray-800/50">
+                                <span className="text-cyan-400 font-bold">Node {idx+1}: {step.node}</span>
+                                <span className="text-gray-400">{JSON.stringify(step).slice(0, 70)}...</span>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Retrieved Passages Accordion */}
+                      <div className="glass-card rounded-2xl p-6">
+                        <h3 className="text-sm font-semibold text-white mb-4 flex items-center justify-between">
+                          <span><i className="fa-solid fa-book-open text-cyan-400 mr-2"></i>Retrieved Context Passages ({response.retrieved_passages.length})</span>
+                          <span className="text-xs text-gray-500 font-normal">Hybrid RRF + Cross-Encoder Reranked</span>
+                        </h3>
+                        <div className="space-y-3">
+                          {response.retrieved_passages.map((p, idx) => (
+                            <div key={idx} className="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800/80 text-xs space-y-1.5">
+                              <div className="flex items-center justify-between">
+                                <span className="font-semibold text-indigo-300">{p.title} <span className="text-gray-500">[{p.id}]</span></span>
+                                <div className="space-x-2 text-[11px]">
+                                  {p.rerank_score !== null && <span className="text-emerald-400 font-mono">Rerank: {p.rerank_score.toFixed(3)}</span>}
+                                  {p.dense_score !== null && <span className="text-cyan-400 font-mono">Dense: {p.dense_score.toFixed(3)}</span>}
+                                </div>
+                              </div>
+                              <p className="text-gray-300 font-sans leading-relaxed">{p.text}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="glass-card rounded-2xl p-12 text-center text-gray-500 flex flex-col items-center justify-center space-y-3">
+                      <div className="w-16 h-16 rounded-2xl bg-gray-900/80 border border-gray-800 flex items-center justify-center text-gray-600 text-2xl">
+                        <i className="fa-solid fa-compass"></i>
+                      </div>
+                      <h3 className="text-base font-semibold text-gray-400">Awaiting Query Execution</h3>
+                      <p className="text-xs text-gray-500 max-w-sm">Enter a question or pick one of the challenging benchmark samples to test EvidenceGuard's hallucination-resistance.</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Documents Tab */}
+            {activeTab === "documents" && (
+              <div className="space-y-6">
+                <div className="glass-card rounded-2xl p-6">
+                  <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+                    <i className="fa-solid fa-cloud-arrow-up text-cyan-400 mr-2"></i> Ingest New Knowledge Document
+                  </h2>
+                  <form onSubmit={handleUpload} className="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+                    <div className="md:col-span-8">
+                      <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Select File (PDF, DOCX, TXT, CSV, Markdown)</label>
+                      <input
+                        type="file"
+                        id="file-upload"
+                        className="w-full bg-gray-900 border border-gray-800 rounded-xl p-2.5 text-xs text-gray-300 file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-indigo-600 file:text-white hover:file:bg-indigo-500 cursor-pointer" />
+                    </div>
+                    <div className="md:col-span-4">
+                      <button
+                        type="submit"
+                        className="w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl text-xs transition shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+                        <i className="fa-solid fa-upload"></i> Upload & Index
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                {/* Document Table */}
+                <div className="glass-card rounded-2xl p-6">
+                  <h3 className="text-base font-semibold text-white mb-4">Indexed Documents in ChromaDB Knowledge Base</h3>
+                  {documents.length > 0 ? (
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left text-xs">
+                        <thead className="bg-gray-900/60 text-gray-400 uppercase tracking-wider border-b border-gray-800">
+                          <tr>
+                            <th className="p-3">Title</th>
+                            <th className="p-3">File Type</th>
+                            <th className="p-3">Chunks</th>
+                            <th className="p-3">Date</th>
+                            <th className="p-3 text-right">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-800">
+                          {documents.map((doc, idx) => (
+                            <tr key={idx} className="hover:bg-gray-900/30">
+                              <td className="p-3 font-semibold text-gray-200">{doc.title}</td>
+                              <td className="p-3 uppercase text-cyan-400">{doc.file_type}</td>
+                              <td className="p-3">{doc.chunks_count}</td>
+                              <td className="p-3 text-gray-400">{doc.date || "N/A"}</td>
+                              <td className="p-3 text-right">
+                                <button className="text-red-400 hover:text-red-300 font-semibold"><i className="fa-solid fa-trash-can mr-1"></i>Delete</button>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : (
+                    <p className="text-xs text-gray-500">No custom documents uploaded yet. Benchmark corpus is loaded in memory.</p>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Experiments & Benchmarks Tab */}
+            {activeTab === "experiments" && (
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div className="md:col-span-4 space-y-3">
+                  <div className="glass-card rounded-2xl p-5">
+                    <h3 className="text-sm font-semibold text-white mb-3 flex items-center gap-2">
+                      <i className="fa-solid fa-flask text-indigo-400"></i> Measured Reports
+                    </h3>
+                    <div className="space-y-2">
+                      {experiments.map((exp, idx) => (
+                        <button
+                          key={idx}
+                          type="button"
+                          onClick={() => loadExpReport(exp.id)}
+                          className={`w-full text-left p-3 rounded-xl text-xs font-semibold transition border flex items-center justify-between ${selectedExp === exp.id ? 'bg-indigo-600/30 border-indigo-500 text-white' : 'bg-gray-900/60 border-gray-800 text-gray-300 hover:bg-gray-800'}`}>
+                          <span>{exp.title}</span>
+                          <i className="fa-solid fa-chevron-right text-gray-500 text-[10px]"></i>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="md:col-span-8">
+                  <div className="glass-card rounded-2xl p-6 min-h-[450px]">
+                    {expContent ? (
+                      <div className="prose prose-invert max-w-none text-xs font-mono leading-relaxed whitespace-pre-wrap">
+                        {expContent}
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center justify-center h-full text-gray-500 py-16">
+                        <i className="fa-solid fa-chart-pie text-3xl mb-3 text-gray-600"></i>
+                        <p className="text-xs">Select an empirical experiment report to view measured results.</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+          </main>
+
+          {/* Footer */}
+          <footer className="border-t border-gray-800 py-4 px-6 text-center text-xs text-gray-500">
+            EvidenceGuard RAG Architecture &bull; Hallucination-Resistant Retrieval &bull; NVIDIA GeForce RTX 4080 SUPER &bull; November 2026
+          </footer>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
